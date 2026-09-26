@@ -1,6 +1,7 @@
 package me.unfoundagent.logger;
 
 import me.unfoundagent.logger.listeners.EventListener;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -16,7 +17,7 @@ public final class Logger extends JavaPlugin {
         // Register the EventListener class to listen for events and pass the logManager to it and pass this plugin to EventListener
         getServer().getPluginManager().registerEvents(new EventListener(logManager), this);
 
-        getLogger().info(ChatColor.GREEN + "Logger plugin enabled and logging events!");
+        Bukkit.getConsoleSender().sendMessage("[logger] "+ ChatColor.GREEN + "Logger plugin enabled and logging events!");
     }
 
     @Override
