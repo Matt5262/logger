@@ -1,21 +1,32 @@
-.gradle
-**/build/
-!**/src/**/build/
+# --- Gradle ---
+.gradle/
+build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# --- run-paper / Minecraft Server Testmiljø ---
+# Dette skjuler serverfiler, verdener og logs genereret af runServer tasken
+run/
+**/run/
+usercache.json
+usernamecache.json
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+server.properties
+eula.txt
 
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+# --- Logfiler og rapporter ---
+*.log
+logs/
+crash-reports/
 
-# Cache of project
-.gradletasknamecache
-
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# --- OS specifikke filer ---
+.DS_Store
+Thumbs.db

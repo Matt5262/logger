@@ -1,0 +1,8 @@
+name: logger
+version: '${version}'
+
+main: me.unfoundagent.logger.Logger
+api-version: '26.3'
+load: POSTWORLD
+
+authors: [UnfoundAgent]
