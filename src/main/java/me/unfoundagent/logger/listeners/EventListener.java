@@ -58,7 +58,7 @@ public class EventListener implements Listener {
     public void onAdvancementDone(PlayerAdvancementDoneEvent event) {
         // Get the advancement key and check if it starts with "recipes/"
         String key = event.getAdvancement().getKey().toString();
-        if (key.startsWith("recipes/")) {
+        if (key.startsWith("minecraft:recipes/")) {
             return;
         }
 
